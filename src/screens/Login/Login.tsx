@@ -12,12 +12,9 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import LoginImg from '../../assets/img/loginscreen';
 
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-
 const {width, height} = Dimensions.get('screen');
 
-const Login = ({navigation}) => {
+const Login = ({navigation}: any) => {
   return (
     <View style={styles.viewLogin}>
       <StatusBar translucent backgroundColor={'#0d0029'} />
@@ -85,7 +82,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: height * 0.03,
     textAlign: 'center',
-  },,
+  },
 });
 
 export default Login;
