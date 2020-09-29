@@ -4,12 +4,9 @@ import {
   View,
   Text,
   StatusBar,
-  Image,
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-
-import Icon from 'react-native-vector-icons/FontAwesome';
 import LoginImg from '../../assets/img/loginscreen';
 
 const {width, height} = Dimensions.get('screen');
@@ -34,23 +31,36 @@ const Login = ({navigation}: any) => {
           style={{
             width: width * 0.7,
             height: height * 0.05,
-            backgroundColor: '#FFFFFF',
+            backgroundColor: '#0d0029',
+            borderWidth: 1,
+            borderColor: '#d6fcb8',
             justifyContent: 'center',
             alignContent: 'center',
             alignItems: 'center',
-            borderRadius: 50,
+            borderRadius: 8,
             marginTop: height * 0.1,
             flexDirection: 'row',
           }}>
-          <Text style={{color: '#0d0029', fontWeight: '800', fontSize: 18}}>
-            SIGN IN
+          <Text style={{color: '#d6fcb8', fontWeight: '800', fontSize: 18}}>
+            Entrar
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={{alignItems: 'center', marginTop: height * 0.05}}>
+        <View style={{alignItems: 'center', marginTop: height * 0.02}}>
           <Text
             style={{
               color: '#FFFFFF',
+              fontWeight: '800',
+              fontStyle: 'normal',
+              letterSpacing: 1.4,
+            }}>
+            ou
+          </Text>
+        </View>
+        <TouchableOpacity
+          style={{alignItems: 'center', marginTop: height * 0.02}}>
+          <Text
+            style={{
+              color: '#d6fcb8',
               fontWeight: '800',
               fontStyle: 'normal',
               letterSpacing: 1.4,

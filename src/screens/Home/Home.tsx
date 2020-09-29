@@ -2,11 +2,8 @@ import React from 'react';
 import {
   StyleSheet,
   View,
-  Text,
   StatusBar,
-  Image,
   Dimensions,
-  TouchableOpacity,
 } from 'react-native';
 
 const {width, height} = Dimensions.get('screen');
