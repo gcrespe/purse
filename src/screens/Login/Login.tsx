@@ -14,7 +14,7 @@ const {width, height} = Dimensions.get('screen');
 const Login = ({navigation}: any) => {
   return (
     <View style={styles.viewLogin}>
-      <StatusBar translucent backgroundColor={'#0d0029'} />
+      <StatusBar translucent backgroundColor={'#0b1c04'} />
       <View style={{marginTop: height * 0.1}}>
         <LoginImg width={width * 0.7} height={height * 0.3} />
       </View>
@@ -31,7 +31,7 @@ const Login = ({navigation}: any) => {
           style={{
             width: width * 0.7,
             height: height * 0.05,
-            backgroundColor: '#0d0029',
+            backgroundColor: '#0b1c04',
             borderWidth: 1,
             borderColor: '#d6fcb8',
             justifyContent: 'center',
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   viewLogin: {
     alignContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0d0029',
+    backgroundColor: '#0b1c04',
     height: height,
   },
   titleText: {
