@@ -4,23 +4,17 @@ import {
   View,
   Text,
   StatusBar,
-  Image,
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-
-import Icon from 'react-native-vector-icons/FontAwesome';
 import LoginImg from '../../assets/img/loginscreen';
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
 
 const {width, height} = Dimensions.get('screen');
 
-const Login = ({navigation}) => {
+const Login = ({navigation}: any) => {
   return (
     <View style={styles.viewLogin}>
-      <StatusBar translucent backgroundColor={'#0d0029'} />
+      <StatusBar translucent backgroundColor={'#0b1c04'} />
       <View style={{marginTop: height * 0.1}}>
         <LoginImg width={width * 0.7} height={height * 0.3} />
       </View>
@@ -37,23 +31,36 @@ const Login = ({navigation}) => {
           style={{
             width: width * 0.7,
             height: height * 0.05,
-            backgroundColor: '#FFFFFF',
+            backgroundColor: '#0b1c04',
+            borderWidth: 1,
+            borderColor: '#d6fcb8',
             justifyContent: 'center',
             alignContent: 'center',
             alignItems: 'center',
-            borderRadius: 50,
+            borderRadius: 8,
             marginTop: height * 0.1,
             flexDirection: 'row',
           }}>
-          <Text style={{color: '#0d0029', fontWeight: '800', fontSize: 18}}>
-            SIGN IN
+          <Text style={{color: '#d6fcb8', fontWeight: '800', fontSize: 18}}>
+            Entrar
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={{alignItems: 'center', marginTop: height * 0.05}}>
+        <View style={{alignItems: 'center', marginTop: height * 0.02}}>
           <Text
             style={{
               color: '#FFFFFF',
+              fontWeight: '800',
+              fontStyle: 'normal',
+              letterSpacing: 1.4,
+            }}>
+            ou
+          </Text>
+        </View>
+        <TouchableOpacity
+          style={{alignItems: 'center', marginTop: height * 0.02}}>
+          <Text
+            style={{
+              color: '#d6fcb8',
               fontWeight: '800',
               fontStyle: 'normal',
               letterSpacing: 1.4,
@@ -70,7 +77,7 @@ const styles = StyleSheet.create({
   viewLogin: {
     alignContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0d0029',
+    backgroundColor: '#0b1c04',
     height: height,
   },
   titleText: {
@@ -85,7 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: height * 0.03,
     textAlign: 'center',
-  },,
+  },
 });
 
 export default Login;
